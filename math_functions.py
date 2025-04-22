@@ -12,3 +12,11 @@ if __name__ == '__main__':
     a, b = 2, 3
     result = exponent(a, b)
     print(f"{a} 的 {b} 次方: {result}")
+
+def square_root(value):
+    """
+    返回 value 的开平方，如果 value 为负数则抛出 ValueError。
+    """
+    if value < 0:
+        raise ValueError("负数不能开平方")
+    return value ** 0.5
