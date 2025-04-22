@@ -12,3 +12,14 @@ if __name__ == '__main__':
     a, b = 2, 3
     result = exponent(a, b)
     print(f"{a} 的 {b} 次方: {result}")
+
+import math
+
+def logarithm(value, base):
+    """
+    返回 value 在 base 底下的对数
+    当 value <= 0 或 base <= 0 或 base == 1 时, 抛出 ValueError
+    """
+    if value <= 0 or base <= 0 or base == 1:
+        raise ValueError("请输入正确的正实数，并且底数不为1")
+    return math.log(value, base)

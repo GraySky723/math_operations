@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            // 使用 Python 3.9-slim 镜像（可选，Python 版本不必和本地完全一致）
+            // 使用 Python 3.10-slim 镜像（可选，Python 版本不必和本地完全一致）
             image 'python:3.10-slim'
             // 如有需要可以挂载 Docker.sock（此例中主要用于安装依赖与测试）
             args '-v /var/run/docker.sock:/var/run/docker.sock'
