@@ -12,3 +12,9 @@ def test_logarithm():
     import pytest
     with pytest.raises(ValueError):
         logarithm(-5, 2)
+def test_square_root():
+    from math_functions import square_root
+    assert abs(square_root(16) - 4) < 1e-6
+    import pytest
+    with pytest.raises(ValueError):
+        square_root(-9)

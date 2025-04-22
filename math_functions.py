@@ -23,3 +23,10 @@ def logarithm(value, base):
     if value <= 0 or base <= 0 or base == 1:
         raise ValueError("请输入正确的正实数，并且底数不为1")
     return math.log(value, base)
+def square_root(value):
+    """
+    返回 value 的开平方，如果 value 为负数则抛出 ValueError。
+    """
+    if value < 0:
+        raise ValueError("负数不能开平方")
+    return value ** 0.5
